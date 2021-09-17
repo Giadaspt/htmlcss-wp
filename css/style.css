@@ -21,9 +21,6 @@ body {
 }
 
 /* header */
-.head {
-  min-height: 64px;
-}
 
 #logo {
   height: 56px;
@@ -71,10 +68,6 @@ nav li:hover, nav li:active {
 /* main area */
 .main-area {
   margin-bottom: 24px;
-}
-
-.top-content {
-  min-height: 64px;
 }
 
 h1 {
