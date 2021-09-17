@@ -85,8 +85,8 @@ h1 {
   color: rgb(182,182,182);
 }
 
+/* section of images and text */
 .column {
-  height: 224px;
   margin: 32px 0;
   float: left;
   border-radius: 8px;
@@ -94,35 +94,61 @@ h1 {
   background-position: center;
 }
 
-.left {
+.c1 {
   width: 20%;
   margin-right: 1%;
+}
+
+.c2 {
+  width: 58%;
+  margin-right: 1%;
+}
+
+.c3 {
+  width: 20%;
+}
+
+.left, .center, .right {
+  height: 224px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center ;
+}
+  
+
+.left .colbox, .center .colbox, .right .colbox{
+  height: 224px;
+  background-color: rgba(204,204,204, .5);
+  border-radius: 8px;
+}
+
+.left {
   background-image: url('../img/img-1.jpg');
 }
 
 .center {
-  width: 58%;
-  margin-right: 1%;
   background-image: url('../img/banner-2.jpg');
 }
 
 .right {
-  width: 20%;
   background-image: url('../img/img-3.jpg');
 }
 
-.left .colbox, .center .colbox, .right .colbox{
-  height: 224px;
-  margin: auto;
-  background-color:rgba(151, 136, 131, 0.5);
-  border-radius: 8px;
+.boldt {
+  font-weight: 600;
+  margin: 10px auto;
 }
-
-
 
 /* footer */
  footer{
   height: 48px;
-  background-color: rgb(136,1,254);
- 
+}
+
+.footext {
+  text-align: center;
+}
+
+.heart::after{
+  content: '\2764';
+  color: red;
 }
