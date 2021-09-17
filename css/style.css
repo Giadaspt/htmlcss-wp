@@ -8,6 +8,12 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 /* contains all the body*/
 .container {
   width: 72%;
@@ -24,6 +30,7 @@ body {
   margin-bottom: 24px ;
 }
 
+/* nav */
 nav li {
   display: inline-block;
   color: rgb(182,182,182);
@@ -37,7 +44,7 @@ nav li:hover, nav li:active {
   color: rgb(191,76,46);
 }
 
-
+/* jumbotron */
 .hero-area {
   min-height: 600px;
   margin: 32px 0;
@@ -63,40 +70,59 @@ nav li:hover, nav li:active {
 
 /* main area */
 .main-area {
-  background-color: rgb(1,134,255);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .top-content {
-  height: 64px;
-  background-color: rgb(171,207,231);
+  min-height: 64px;
 }
 
-.clearfix::after {
-  content: '';
-  display: table;
-  clear: both;
+h1 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.left, .center, .right {
-  min-height: 500px;
-  margin: 18px 0;
-  background-color: rgb(171,207,231); 
+.top-content > p {
+  color: rgb(182,182,182);
+}
+
+.column {
+  height: 224px;
+  margin: 32px 0;
   float: left;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
 }
 
-.left, .right {
+.left {
   width: 20%;
+  margin-right: 1%;
+  background-image: url('../img/img-1.jpg');
 }
 
 .center {
-  width: 56%;
-  margin-right: 2%;
-  margin-left: 2%;
+  width: 58%;
+  margin-right: 1%;
+  background-image: url('../img/banner-2.jpg');
 }
 
+.right {
+  width: 20%;
+  background-image: url('../img/img-3.jpg');
+}
+
+.left .colbox, .center .colbox, .right .colbox{
+  height: 224px;
+  margin: auto;
+  background-color:rgba(151, 136, 131, 0.5);
+  border-radius: 8px;
+}
+
+
+
 /* footer */
-footer {
+ .foot{
   height: 48px;
   background-color: rgb(136,1,254);
+ 
 }
