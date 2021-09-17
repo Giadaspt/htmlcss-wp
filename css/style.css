@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* contains all the body*/
+.container {
+  width: 72%;
+  margin: 20px auto;
+}
+
+/* header */
+.head {
+  height: 64px;
+  background-color: rgb(229,121,230);
+}
+
+.hero-area {
+  min-height: 400px;
+  margin: 20px 0;
+  background-color: rgb(225,214,122);
+}
+
+/* footer */
+footer {
+  height: 48px;
+  margin: 20px 0;
+  background-color: rgb(136,1,254);
+}
+
+/* main area */
+.main-area {
+  background-color: rgb(1,134,255);
+}
+
+.top-content {
+  height: 64px;
+  background-color: rgb(171,207,231);
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.left, .center, .right {
+  min-height: 500px;
+  margin: 18px 0;
+  background-color: rgb(171,207,231); 
+  float: left;
+}
+
+.left, .right {
+  width: 20%;
+}
+
+.center {
+  width: 56%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
