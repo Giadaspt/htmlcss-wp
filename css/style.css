@@ -4,34 +4,67 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* contains all the body*/
 .container {
   width: 72%;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 /* header */
 .head {
-  height: 64px;
-  background-color: rgb(229,121,230);
+  min-height: 64px;
 }
+
+#logo {
+  height: 56px;
+  margin-bottom: 24px ;
+}
+
+nav li {
+  display: inline-block;
+  color: rgb(182,182,182);
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 16px;
+}
+
+nav li:hover, nav li:active {
+  color: rgb(191,76,46);
+}
+
 
 .hero-area {
-  min-height: 400px;
-  margin: 20px 0;
-  background-color: rgb(225,214,122);
+  min-height: 600px;
+  margin: 32px 0;
+  background-image: url('../img/banner.jpg');
+  background-color: rgb (203, 188, 182);
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center ;
 }
 
-/* footer */
-footer {
-  height: 48px;
-  margin: 20px 0;
-  background-color: rgb(136,1,254);
+.jumbotron {
+  color: white;
+  margin-left: 56px;
+  width: 60%;
+  float: left;
+  padding-top: 27%;
+}
+
+.jumbotron .text1 {
+  font-size: 40px;
+  font-weight: 800;
 }
 
 /* main area */
 .main-area {
   background-color: rgb(1,134,255);
+  margin-bottom: 20px;
 }
 
 .top-content {
@@ -60,4 +93,10 @@ footer {
   width: 56%;
   margin-right: 2%;
   margin-left: 2%;
+}
+
+/* footer */
+footer {
+  height: 48px;
+  background-color: rgb(136,1,254);
 }
